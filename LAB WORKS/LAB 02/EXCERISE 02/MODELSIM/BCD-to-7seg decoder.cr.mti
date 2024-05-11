@@ -1,0 +1,19 @@
+{C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 02/EXCERISE 02/MODELSIM/BCD-to-7seg_TB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 02/EXCERISE 02/MODELSIM/BCD-to-7seg_TB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BCD_to_7seg_TB
+-- Compiling architecture sim of BCD_to_7seg_TB
+
+} {} {}} {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 02/EXCERISE 02/MODELSIM/BCD-to-7seg decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 02/EXCERISE 02/MODELSIM/BCD-to-7seg decoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BCD_to_7seg_decoder
+-- Compiling architecture Behavioral of BCD_to_7seg_decoder
+
+} {} {}}
