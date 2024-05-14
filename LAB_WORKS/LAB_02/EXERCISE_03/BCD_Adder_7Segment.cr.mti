@@ -1,0 +1,22 @@
+{A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd} {0 {vcom -work work -2002 -explicit -stats=none {A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BCD_Adder_7Segment_tb
+-- Compiling architecture Behavioral of BCD_Adder_7Segment_tb
+** Error: A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd(26): near "array": (vcom-1576) expecting STRING or IDENTIFIER or << or '('.
+** Error: A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd(67): (vcom-1136) Unknown identifier "TableArray".
+** Error: A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd(68): (vcom-1136) Unknown identifier "TableArray".
+** Note: A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd(80): VHDL Compiler exiting
+
+} {8.0 11.0} {}} {A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BCD_Adder_7Segment
+-- Compiling architecture Behavioral of BCD_Adder_7Segment
+
+} {} {}}
