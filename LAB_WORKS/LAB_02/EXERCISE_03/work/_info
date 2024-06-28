@@ -10,67 +10,82 @@ z2
 cModel Technology
 dF:/Softwares/New folder
 Ebcd_adder_7segment
-Z0 w1715645867
-Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z0 w1715770368
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2
-Z4 dA:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03
-Z5 8A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd
-Z6 FA:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03
+Z5 8D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment.vhd
+Z6 FD:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment.vhd
 l0
-L6 1
-VOc?F5EOhW`:ZIZAlQ`Scj2
+L6
+V_@=K;UzkMj0gWM1hSdgOY2
 !s100 8I]H=k6QlOHTEF175GGAH0
-Z7 OV;C;2021.1;73
+Z7 OV;C;10.5b;63
 32
-Z8 !s110 1715645876
+Z8 !s110 1715770537
 !i10b 1
-Z9 !s108 1715645875.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd|
-!s107 A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd|
+Z9 !s108 1715770537.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment.vhd|
+Z11 !s107 D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment.vhd|
 !i113 1
-Z11 o-work work -2002 -explicit
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
 Abehavioral
 R1
 R2
 R3
-DEx4 work 18 bcd_adder_7segment 0 22 Oc?F5EOhW`:ZIZAlQ`Scj2
-!i122 2
+DEx4 work 18 bcd_adder_7segment 0 22 _@=K;UzkMj0gWM1hSdgOY2
 l40
-L16 57
-V0^gYNlPQiQSYPC@A>XS[K1
-!s100 BP?`mNaaiBzGZAC<d>ZNY2
+L16
+VZEiPQH3=SeAICN6PLj<OO0
+Z14 !s100 BP?`mNaaiBzGZAC<d>ZNY2
 R7
 32
 R8
 !i10b 1
 R9
 R10
-Z13 !s107 A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment.vhd|
-!i113 1
 R11
+!i113 1
 R12
+R13
 Ebcd_adder_7segment_tb
-w1715645738
+R0
 R2
 R3
-!i122 1
 R4
-8A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd
-FA:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd
+Z15 8D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment_tb.vhd
+Z16 FD:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment_tb.vhd
 l0
-L4 1
-VLI=bMe1jSH]52MWZhZXSD0
+L4
+V6Ph@kWK>mS9@k;87g^6cW2
 !s100 5OYTYh1GSTaJ;?Rl3>R_@3
 R7
 32
-!s110 1715645875
+Z17 !s110 1715770499
 !i10b 1
-R9
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd|
-!s107 A:/Sahab wedding pictures/SS2024_HWE_Lab_Team_F-main/LAB WORKS/LAB 02/EXERCISE 03/BCD_Adder_7Segment_tb.vhd|
+Z18 !s108 1715770499.000000
+Z19 !s90 -reportprogress|300|-work|work|D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment_tb.vhd|
+Z20 !s107 D:/MYGIT/SS2024_HWE_Lab_Team_F/LAB_WORKS/LAB_02/EXERCISE_03/BCD_Adder_7Segment_tb.vhd|
 !i113 1
-R11
 R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 21 bcd_adder_7segment_tb 0 22 6Ph@kWK>mS9@k;87g^6cW2
+l33
+L7
+Vm<GZ4d8hDeQD0@0[FY<gK2
+!s100 7e9STzhZ7QhA]a@`Gf>Y21
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
