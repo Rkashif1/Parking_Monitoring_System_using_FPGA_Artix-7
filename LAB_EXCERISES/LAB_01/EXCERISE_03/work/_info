@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Efa
+Z0 w1715189012
+Z1 dC:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03
+Z2 8C:/intelFPGA/18.1/FA.vhd
+Z3 FC:/intelFPGA/18.1/FA.vhd
+l0
+L1
+VI@Q_^iAPIj8o=TX8UJoV=1
+!s100 _za6534EO:JXljkgTIFXz0
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1715426631
+!i10b 1
+Z6 !s108 1715426631.000000
+Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA/18.1/FA.vhd|
+Z8 !s107 C:/intelFPGA/18.1/FA.vhd|
+!i113 1
+Z9 o-work work -2002 -explicit
+Z10 tExplicit 1 CvgOpt 0
+Abehavioral
+DEx4 work 2 fa 0 22 I@Q_^iAPIj8o=TX8UJoV=1
+l8
+L6
+VhlX^GQzS]d?ho>T=;o7Qz0
+!s100 b0@^eoSB8Hzl?UjWYfHA[0
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Erca
+Z11 w1715196662
+R1
+Z12 8C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd
+Z13 FC:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd
+l0
+L2
+VaW@@=JZk=2S2JQVGCBQ=^3
+!s100 l6D?ZL>70U<;[j?IF1WTb3
+R4
+32
+R5
+!i10b 1
+R6
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd|
+Z15 !s107 C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+DEx4 work 3 rca 0 22 aW@@=JZk=2S2JQVGCBQ=^3
+l19
+L9
+VZiZg2n84Qdi`jU9=BWmmN0
+!s100 T<[;ACZ24aKWBDAd1nhAB2
+R4
+32
+R5
+!i10b 1
+R6
+R14
+R15
+!i113 1
+R9
+R10
+Erca_tb
+Z16 w1715190180
+R1
+Z17 8C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd
+Z18 FC:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd
+l0
+L3
+V=XIPbT45P]UVNP2j@E>Tc1
+!s100 F4hi0QOf4iKB2H__iEN7^1
+R4
+32
+R5
+!i10b 1
+R6
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd|
+Z20 !s107 C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd|
+!i113 1
+R9
+R10
+Abehavioral
+Z21 DEx4 work 6 rca_tb 0 22 =XIPbT45P]UVNP2j@E>Tc1
+l22
+L6
+Z22 Vm:<H]Kb<;Ja_<Vb241jVj0
+Z23 !s100 n_PcbO2?I32WB=08G9AVL0
+R4
+32
+R5
+!i10b 1
+R6
+R19
+R20
+!i113 1
+R9
+R10

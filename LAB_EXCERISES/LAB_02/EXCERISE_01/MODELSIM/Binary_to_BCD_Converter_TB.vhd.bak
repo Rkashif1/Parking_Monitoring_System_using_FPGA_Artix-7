@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Binary_to_BCD_Converter_TB is
+end entity Binary_to_BCD_Converter_TB;
+
+architecture sim of Binary_to_BCD_Converter_TB is
+    signal binary_input : std_logic_vector(3 downto 0) := (others => '0');
+    signal bcd_output   : std_logic_vector(7 downto 0);
+
+component Binary_to_BCD_Converter
+port (
+        binary_input : in  bit_vector(3 downto 0);
+        bcd_output   : out bit_vector(7 downto 0)
+    );
+end component;
+begin
+    -- Instantiate the DUT
+    dut : Binary_to_BCD_Converter
+        port map (
+            binary_input => binary_input,
+            bcd_output   => bcd_output
+        );
+
+    -- Stimulus process
+    stimulus_proc: process
+    begin
+        -- Test all possible binary inputs
+        for i in 0 to 15 loop
+            binary_input <= std_logic_vector(to_unsigned(i, binary_input'length));
+            wait for 10 ns;
+            -- Add assertions here if needed to verify the correctness of bcd_output
+        end loop;
+        wait;
+    end process;
+S
+end architecture sim;
+

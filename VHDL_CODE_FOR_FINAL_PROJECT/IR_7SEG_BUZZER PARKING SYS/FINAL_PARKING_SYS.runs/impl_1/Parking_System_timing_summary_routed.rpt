@@ -1,0 +1,1310 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Mon Jul  1 20:35:57 2024
+| Host         : DESKTOP-4ADHA59 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Parking_System_timing_summary_routed.rpt -pb Parking_System_timing_summary_routed.pb -rpx Parking_System_timing_summary_routed.rpx -warn_on_violation
+| Design       : Parking_System
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  107         
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (107)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (239)
+5. checking no_input_delay (1)
+6. checking no_output_delay (17)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (107)
+--------------------------
+ There are 104 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: clk_divider_inst/refresh_clk_internal_reg/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (239)
+--------------------------------------------------
+ There are 239 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (17)
+--------------------------------
+ There are 17 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  260          inf        0.000                      0                  260           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           260 Endpoints
+Min Delay           260 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.162ns  (logic 7.471ns (37.054%)  route 12.691ns (62.946%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.831    19.830    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X2Y128         LUT5 (Prop_lut5_I1_O)        0.332    20.162 r  echo_processor_inst/distance[2]_i_1/O
+                         net (fo=1, routed)           0.000    20.162    echo_processor_inst/distance[2]_i_1_n_0
+    SLICE_X2Y128         FDRE                                         r  echo_processor_inst/distance_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.152ns  (logic 7.471ns (37.072%)  route 12.681ns (62.928%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.821    19.820    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X2Y128         LUT5 (Prop_lut5_I1_O)        0.332    20.152 r  echo_processor_inst/distance[3]_i_1/O
+                         net (fo=1, routed)           0.000    20.152    echo_processor_inst/distance[3]_i_1_n_0
+    SLICE_X2Y128         FDRE                                         r  echo_processor_inst/distance_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.991ns  (logic 7.471ns (37.371%)  route 12.520ns (62.629%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.660    19.659    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X3Y129         LUT5 (Prop_lut5_I1_O)        0.332    19.991 r  echo_processor_inst/distance[6]_i_1/O
+                         net (fo=1, routed)           0.000    19.991    echo_processor_inst/distance[6]_i_1_n_0
+    SLICE_X3Y129         FDRE                                         r  echo_processor_inst/distance_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.989ns  (logic 7.471ns (37.375%)  route 12.518ns (62.625%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.658    19.657    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X3Y129         LUT5 (Prop_lut5_I1_O)        0.332    19.989 r  echo_processor_inst/distance[5]_i_1/O
+                         net (fo=1, routed)           0.000    19.989    echo_processor_inst/distance[5]_i_1_n_0
+    SLICE_X3Y129         FDRE                                         r  echo_processor_inst/distance_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.824ns  (logic 7.471ns (37.686%)  route 12.353ns (62.314%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.493    19.492    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X3Y129         LUT5 (Prop_lut5_I1_O)        0.332    19.824 r  echo_processor_inst/distance[7]_i_1/O
+                         net (fo=1, routed)           0.000    19.824    echo_processor_inst/distance[7]_i_1_n_0
+    SLICE_X3Y129         FDRE                                         r  echo_processor_inst/distance_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.764ns  (logic 7.471ns (37.800%)  route 12.293ns (62.200%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.433    19.432    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X2Y128         LUT5 (Prop_lut5_I1_O)        0.332    19.764 r  echo_processor_inst/distance[4]_i_1/O
+                         net (fo=1, routed)           0.000    19.764    echo_processor_inst/distance[4]_i_1_n_0
+    SLICE_X2Y128         FDRE                                         r  echo_processor_inst/distance_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.675ns  (logic 7.471ns (37.973%)  route 12.204ns (62.027%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.344    19.343    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X1Y131         LUT5 (Prop_lut5_I1_O)        0.332    19.675 r  echo_processor_inst/distance[8]_i_1/O
+                         net (fo=1, routed)           0.000    19.675    echo_processor_inst/distance[8]_i_1_n_0
+    SLICE_X1Y131         FDRE                                         r  echo_processor_inst/distance_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[9]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.508ns  (logic 7.471ns (38.298%)  route 12.037ns (61.702%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.177    19.176    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X1Y131         LUT5 (Prop_lut5_I1_O)        0.332    19.508 r  echo_processor_inst/distance[9]_i_1/O
+                         net (fo=1, routed)           0.000    19.508    echo_processor_inst/distance[9]_i_1_n_0
+    SLICE_X1Y131         FDRE                                         r  echo_processor_inst/distance_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.503ns  (logic 7.471ns (38.308%)  route 12.032ns (61.692%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.172    19.171    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X1Y131         LUT5 (Prop_lut5_I1_O)        0.332    19.503 r  echo_processor_inst/distance[10]_i_1/O
+                         net (fo=1, routed)           0.000    19.503    echo_processor_inst/distance[10]_i_1_n_0
+    SLICE_X1Y131         FDRE                                         r  echo_processor_inst/distance_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/pulse_width_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            echo_processor_inst/distance_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        19.451ns  (logic 7.471ns (38.410%)  route 11.980ns (61.590%))
+  Logic Levels:           28  (CARRY4=17 FDRE=1 LUT3=4 LUT4=3 LUT5=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y131         FDRE                         0.000     0.000 r  echo_processor_inst/pulse_width_reg[6]/C
+    SLICE_X3Y131         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  echo_processor_inst/pulse_width_reg[6]/Q
+                         net (fo=27, routed)          2.004     2.460    echo_processor_inst/pulse_width_reg[6]
+    SLICE_X4Y130         LUT3 (Prop_lut3_I0_O)        0.150     2.610 r  echo_processor_inst/distance[5]_i_233/O
+                         net (fo=2, routed)           0.448     3.058    echo_processor_inst/distance[5]_i_233_n_0
+    SLICE_X4Y130         LUT4 (Prop_lut4_I3_O)        0.326     3.384 r  echo_processor_inst/distance[5]_i_237/O
+                         net (fo=1, routed)           0.000     3.384    echo_processor_inst/distance[5]_i_237_n_0
+    SLICE_X4Y130         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     3.934 r  echo_processor_inst/distance_reg[5]_i_207/CO[3]
+                         net (fo=1, routed)           0.000     3.934    echo_processor_inst/distance_reg[5]_i_207_n_0
+    SLICE_X4Y131         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.048 r  echo_processor_inst/distance_reg[5]_i_167/CO[3]
+                         net (fo=1, routed)           0.000     4.048    echo_processor_inst/distance_reg[5]_i_167_n_0
+    SLICE_X4Y132         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.162 r  echo_processor_inst/distance_reg[5]_i_126/CO[3]
+                         net (fo=1, routed)           0.000     4.162    echo_processor_inst/distance_reg[5]_i_126_n_0
+    SLICE_X4Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     4.276 r  echo_processor_inst/distance_reg[5]_i_146/CO[3]
+                         net (fo=1, routed)           0.000     4.276    echo_processor_inst/distance_reg[5]_i_146_n_0
+    SLICE_X4Y134         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     4.499 r  echo_processor_inst/distance_reg[5]_i_109/O[0]
+                         net (fo=3, routed)           0.824     5.323    echo_processor_inst/distance_reg[5]_i_109_n_7
+    SLICE_X5Y132         LUT3 (Prop_lut3_I0_O)        0.329     5.652 r  echo_processor_inst/distance[5]_i_103/O
+                         net (fo=2, routed)           0.945     6.597    echo_processor_inst/distance[5]_i_103_n_0
+    SLICE_X5Y132         LUT4 (Prop_lut4_I3_O)        0.327     6.924 r  echo_processor_inst/distance[5]_i_105/O
+                         net (fo=1, routed)           0.000     6.924    echo_processor_inst/distance[5]_i_105_n_0
+    SLICE_X5Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     7.325 r  echo_processor_inst/distance_reg[5]_i_45/CO[3]
+                         net (fo=1, routed)           0.000     7.325    echo_processor_inst/distance_reg[5]_i_45_n_0
+    SLICE_X5Y133         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.548 r  echo_processor_inst/distance_reg[5]_i_28/O[0]
+                         net (fo=3, routed)           1.484     9.032    echo_processor_inst/distance_reg[5]_i_28_n_7
+    SLICE_X12Y132        LUT3 (Prop_lut3_I1_O)        0.299     9.331 r  echo_processor_inst/distance[5]_i_43/O
+                         net (fo=2, routed)           0.991    10.322    echo_processor_inst/distance[5]_i_43_n_0
+    SLICE_X7Y132         LUT5 (Prop_lut5_I1_O)        0.124    10.446 r  echo_processor_inst/distance[5]_i_16/O
+                         net (fo=2, routed)           1.191    11.636    echo_processor_inst/distance[5]_i_16_n_0
+    SLICE_X9Y133         LUT6 (Prop_lut6_I0_O)        0.124    11.760 r  echo_processor_inst/distance[5]_i_20/O
+                         net (fo=1, routed)           0.000    11.760    echo_processor_inst/distance[5]_i_20_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.292 r  echo_processor_inst/distance_reg[5]_i_3/CO[3]
+                         net (fo=1, routed)           0.000    12.292    echo_processor_inst/distance_reg[5]_i_3_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.531 f  echo_processor_inst/distance_reg[5]_i_2/O[2]
+                         net (fo=10, routed)          1.257    13.788    echo_processor_inst/distance_reg[5]_i_2_n_5
+    SLICE_X7Y136         LUT3 (Prop_lut3_I0_O)        0.302    14.090 r  echo_processor_inst/distance[15]_i_229/O
+                         net (fo=1, routed)           0.569    14.659    echo_processor_inst/distance[15]_i_229_n_0
+    SLICE_X6Y136         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520    15.179 r  echo_processor_inst/distance_reg[15]_i_208/CO[3]
+                         net (fo=1, routed)           0.000    15.179    echo_processor_inst/distance_reg[15]_i_208_n_0
+    SLICE_X6Y137         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.296 r  echo_processor_inst/distance_reg[15]_i_172/CO[3]
+                         net (fo=1, routed)           0.000    15.296    echo_processor_inst/distance_reg[15]_i_172_n_0
+    SLICE_X6Y138         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.413 r  echo_processor_inst/distance_reg[15]_i_142/CO[3]
+                         net (fo=1, routed)           0.000    15.413    echo_processor_inst/distance_reg[15]_i_142_n_0
+    SLICE_X6Y139         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.530 r  echo_processor_inst/distance_reg[15]_i_105/CO[3]
+                         net (fo=1, routed)           0.000    15.530    echo_processor_inst/distance_reg[15]_i_105_n_0
+    SLICE_X6Y140         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.647 r  echo_processor_inst/distance_reg[15]_i_43/CO[3]
+                         net (fo=1, routed)           0.000    15.647    echo_processor_inst/distance_reg[15]_i_43_n_0
+    SLICE_X6Y141         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.866 r  echo_processor_inst/distance_reg[15]_i_20/O[0]
+                         net (fo=3, routed)           1.149    17.014    echo_processor_inst/distance_reg[15]_i_20_n_7
+    SLICE_X2Y139         LUT4 (Prop_lut4_I2_O)        0.295    17.309 r  echo_processor_inst/distance[15]_i_41/O
+                         net (fo=1, routed)           0.000    17.309    echo_processor_inst/distance[15]_i_41_n_0
+    SLICE_X2Y139         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    17.842 r  echo_processor_inst/distance_reg[15]_i_15/CO[3]
+                         net (fo=1, routed)           0.000    17.842    echo_processor_inst/distance_reg[15]_i_15_n_0
+    SLICE_X2Y140         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.999 r  echo_processor_inst/distance_reg[15]_i_4/CO[1]
+                         net (fo=14, routed)          1.120    19.119    echo_processor_inst/distance_reg[15]_i_4_n_2
+    SLICE_X1Y132         LUT5 (Prop_lut5_I1_O)        0.332    19.451 r  echo_processor_inst/distance[12]_i_1/O
+                         net (fo=1, routed)           0.000    19.451    echo_processor_inst/distance[12]_i_1_n_0
+    SLICE_X1Y132         FDRE                                         r  echo_processor_inst/distance_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 trig_gen_inst/cnt_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            trig_gen_inst/trig_signal_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.285ns  (logic 0.186ns (65.209%)  route 0.099ns (34.791%))
+  Logic Levels:           2  (FDRE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y121         FDRE                         0.000     0.000 r  trig_gen_inst/cnt_reg[4]/C
+    SLICE_X3Y121         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  trig_gen_inst/cnt_reg[4]/Q
+                         net (fo=2, routed)           0.099     0.240    trig_gen_inst/cnt_reg[4]
+    SLICE_X2Y121         LUT5 (Prop_lut5_I3_O)        0.045     0.285 r  trig_gen_inst/trig_signal_i_1/O
+                         net (fo=1, routed)           0.000     0.285    trig_gen_inst/trig_signal_i_1_n_0
+    SLICE_X2Y121         FDRE                                         r  trig_gen_inst/trig_signal_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 echo_processor_inst/distance_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            buzzer_control_inst/buzzer_signal_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.305ns  (logic 0.209ns (68.486%)  route 0.096ns (31.514%))
+  Logic Levels:           2  (FDRE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y128         FDRE                         0.000     0.000 r  echo_processor_inst/distance_reg[3]/C
+    SLICE_X2Y128         FDRE (Prop_fdre_C_Q)         0.164     0.164 f  echo_processor_inst/distance_reg[3]/Q
+                         net (fo=1, routed)           0.096     0.260    buzzer_control_inst/Q[1]
+    SLICE_X1Y128         LUT5 (Prop_lut5_I0_O)        0.045     0.305 r  buzzer_control_inst/buzzer_signal_i_1/O
+                         net (fo=1, routed)           0.000     0.305    buzzer_control_inst/buzzer_signal_i_1_n_0
+    SLICE_X1Y128         FDRE                                         r  buzzer_control_inst/buzzer_signal_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[20]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y95          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[20]/C
+    SLICE_X3Y95          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[20]/Q
+                         net (fo=2, routed)           0.117     0.258    clk_divider_inst/count[20]
+    SLICE_X3Y95          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.366 r  clk_divider_inst/count_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.366    clk_divider_inst/p_1_in[20]
+    SLICE_X3Y95          FDRE                                         r  clk_divider_inst/count_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[28]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y97          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[28]/C
+    SLICE_X3Y97          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[28]/Q
+                         net (fo=2, routed)           0.117     0.258    clk_divider_inst/count[28]
+    SLICE_X3Y97          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.366 r  clk_divider_inst/count_reg[28]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.366    clk_divider_inst/p_1_in[28]
+    SLICE_X3Y97          FDRE                                         r  clk_divider_inst/count_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[8]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y92          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[8]/C
+    SLICE_X3Y92          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[8]/Q
+                         net (fo=2, routed)           0.117     0.258    clk_divider_inst/count[8]
+    SLICE_X3Y92          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.366 r  clk_divider_inst/count_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.366    clk_divider_inst/p_1_in[8]
+    SLICE_X3Y92          FDRE                                         r  clk_divider_inst/count_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 trig_gen_inst/cnt_reg[15]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            trig_gen_inst/cnt_reg[15]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.368ns  (logic 0.249ns (67.612%)  route 0.119ns (32.388%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y123         FDRE                         0.000     0.000 r  trig_gen_inst/cnt_reg[15]/C
+    SLICE_X3Y123         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  trig_gen_inst/cnt_reg[15]/Q
+                         net (fo=2, routed)           0.119     0.260    trig_gen_inst/cnt_reg[15]
+    SLICE_X3Y123         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.368 r  trig_gen_inst/cnt_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.368    trig_gen_inst/cnt_reg[12]_i_1_n_4
+    SLICE_X3Y123         FDRE                                         r  trig_gen_inst/cnt_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[12]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y93          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[12]/C
+    SLICE_X3Y93          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[12]/Q
+                         net (fo=3, routed)           0.120     0.261    clk_divider_inst/count[12]
+    SLICE_X3Y93          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  clk_divider_inst/count_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    clk_divider_inst/p_1_in[12]
+    SLICE_X3Y93          FDRE                                         r  clk_divider_inst/count_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[16]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[16]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y94          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[16]/C
+    SLICE_X3Y94          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[16]/Q
+                         net (fo=2, routed)           0.120     0.261    clk_divider_inst/count[16]
+    SLICE_X3Y94          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  clk_divider_inst/count_reg[16]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    clk_divider_inst/p_1_in[16]
+    SLICE_X3Y94          FDRE                                         r  clk_divider_inst/count_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_divider_inst/count_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            clk_divider_inst/count_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y91          FDRE                         0.000     0.000 r  clk_divider_inst/count_reg[4]/C
+    SLICE_X3Y91          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  clk_divider_inst/count_reg[4]/Q
+                         net (fo=2, routed)           0.120     0.261    clk_divider_inst/count[4]
+    SLICE_X3Y91          CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  clk_divider_inst/count_reg[4]_i_1/O[3]
+                         net (fo=1, routed)           0.000     0.369    clk_divider_inst/p_1_in[4]
+    SLICE_X3Y91          FDRE                                         r  clk_divider_inst/count_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 trig_gen_inst/cnt_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            trig_gen_inst/cnt_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           2  (CARRY4=1 FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y120         FDRE                         0.000     0.000 r  trig_gen_inst/cnt_reg[3]/C
+    SLICE_X3Y120         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  trig_gen_inst/cnt_reg[3]/Q
+                         net (fo=2, routed)           0.120     0.261    trig_gen_inst/cnt_reg[3]
+    SLICE_X3Y120         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     0.369 r  trig_gen_inst/cnt_reg[0]_i_2/O[3]
+                         net (fo=1, routed)           0.000     0.369    trig_gen_inst/cnt_reg[0]_i_2_n_4
+    SLICE_X3Y120         FDRE                                         r  trig_gen_inst/cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

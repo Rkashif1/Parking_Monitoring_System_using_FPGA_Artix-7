@@ -1,0 +1,84 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
+| Date         : Mon Jul  1 20:34:39 2024
+| Host         : DESKTOP-4ADHA59 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Parking_System_control_sets_placed.rpt
+| Design       : Parking_System
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              54 |           15 |
+| Yes          | No                    | No                     |              14 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal     |               Enable Signal              |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  clk_divider_inst/CLK |                                          |                                            |                1 |              3 |         3.00 |
+|  clk_IBUF_BUFG        |                                          |                                            |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG        | echo_processor_inst/distance[15]_i_1_n_0 |                                            |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG        |                                          | trig_gen_inst/clear                        |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG        |                                          | clk_divider_inst/p_0_in                    |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG        | echo_IBUF                                | echo_processor_inst/pulse_width[0]_i_1_n_0 |                8 |             32 |         4.00 |
++-----------------------+------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+

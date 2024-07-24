@@ -1,0 +1,127 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 110.49 40.64)
+		(size 38.1 55.88)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6caebfca-b986-4e80-be3c-3adf5503915c")
+		(property "Sheetname" "Fpga_Ext"
+			(at 110.49 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Fpga.kicad_sch"
+			(at 110.49 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "schemetics"
+				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 41.91)
+		(size 35.56 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c53c75f5-abfc-49d0-bfe7-d23b3aabdefd")
+		(property "Sheetname" "Fpga_Util"
+			(at 179.07 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Utilities.kicad_sch"
+			(at 179.07 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "schemetics"
+				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 40.64)
+		(size 31.75 54.61)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1")
+		(property "Sheetname" "Power_supply"
+			(at 44.45 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 44.45 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "schemetics"
+				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

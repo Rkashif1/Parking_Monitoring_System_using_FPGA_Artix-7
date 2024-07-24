@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_echo_processor_behav" "xil_defaultlib.tb_echo_processor" -log "elaborate.log" 

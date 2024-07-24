@@ -1,0 +1,19 @@
+{C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity RCA
+-- Compiling architecture Behavioral of RCA
+
+} {} {}} {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Kashif/Desktop/HARDWARE ENGINEERING LAB/LAB 01/EXCERISE 03/RCA_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity RCA_tb
+-- Compiling architecture Behavioral of RCA_tb
+
+} {} {}} C:/intelFPGA/18.1/FA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA/18.1/FA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity FA
+-- Compiling architecture Behavioral of FA
+
+} {} {}}
