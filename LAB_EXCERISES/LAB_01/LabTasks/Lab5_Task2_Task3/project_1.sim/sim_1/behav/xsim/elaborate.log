@@ -1,0 +1,15 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Counter_3bit_Sync_behav xil_defaultlib.tb_Counter_3bit_Sync -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling architecture behavioral of entity xil_defaultlib.JK_FF [jk_ff_default]
+Compiling architecture structural of entity xil_defaultlib.Counter_3bit_Sync [counter_3bit_sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_counter_3bit_sync
+Built simulation snapshot tb_Counter_3bit_Sync_behav
