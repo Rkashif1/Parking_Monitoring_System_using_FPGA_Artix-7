@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri Jul 26 21:55:55 2024
+# Process ID: 21028
+# Current directory: D:/MYGIT/SS2024_HWE_Lab_Team_F/TEST_BENCHES_VHDL_CODE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11340 D:\MYGIT\SS2024_HWE_Lab_Team_F\TEST_BENCHES_VHDL_CODE\Test_benches.xpr
+# Log file: D:/MYGIT/SS2024_HWE_Lab_Team_F/TEST_BENCHES_VHDL_CODE/vivado.log
+# Journal file: D:/MYGIT/SS2024_HWE_Lab_Team_F/TEST_BENCHES_VHDL_CODE\vivado.jou
+# Running On: DESKTOP-4ADHA59, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8376 MB
+#----------------------------------------------------------ststart_guopen_project D:/MYGIT/SS2024_HWE_Lab_Team_F/TEST_BENCHES_VHDL_CODE/Test_benches.xpr
+r
+update_compile_order -fileset sources_1
