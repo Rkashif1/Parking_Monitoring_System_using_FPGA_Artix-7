@@ -5026,7 +5026,7 @@
 			(uuid "59dbfda9-9865-4273-9929-d542944bda70")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R6")
 					(unit 1)
@@ -5109,7 +5109,7 @@
 			(uuid "178a762b-2de0-4430-a407-8b90ccc28348")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "J1")
 					(unit 1)
@@ -5178,7 +5178,7 @@
 			(uuid "ed879f12-16c1-433b-bd35-4add5680ece0")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R4")
 					(unit 1)
@@ -5247,7 +5247,7 @@
 			(uuid "b533bee5-6388-456e-a7ed-3e0b0941920c")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R1")
 					(unit 1)
@@ -5281,7 +5281,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Display_7Segment:CA56-12CGKWA"
+		(property "Footprint" "Display_7Segment:KCSC02-107"
 			(at 165.1 74.93 0)
 			(effects
 				(font
@@ -5345,7 +5345,7 @@
 			(uuid "b1409db3-8d8b-4e07-a5d4-fc2fea1715ea")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "U2")
 					(unit 1)
@@ -5414,7 +5414,7 @@
 			(uuid "c801903f-617d-46b3-bc9a-66f9f91ed0e9")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R3")
 					(unit 1)
@@ -5910,7 +5910,7 @@
 			(uuid "d8da7838-b504-4bb3-a47a-981bf88ef5e1")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "U3")
 					(unit 1)
@@ -5979,7 +5979,7 @@
 			(uuid "b704715c-7373-4665-bd3b-11a204840843")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R5")
 					(unit 1)
@@ -6048,7 +6048,7 @@
 			(uuid "7aa2e77a-952b-470d-923d-dfab6dcdba1f")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R7")
 					(unit 1)
@@ -6117,7 +6117,7 @@
 			(uuid "18c5a63a-470b-40de-a8ce-9735131f7273")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R2")
 					(unit 1)
@@ -6151,7 +6151,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Display_7Segment:CA56-12CGKWA"
+		(property "Footprint" "Display_7Segment:KCSC02-107"
 			(at 76.2 80.01 0)
 			(effects
 				(font
@@ -6215,7 +6215,7 @@
 			(uuid "8ea84368-7b9b-4d7d-a26c-3b918a23e33d")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "U1")
 					(unit 1)
@@ -6284,7 +6284,7 @@
 			(uuid "8c672a2d-85a2-4fd5-ac8a-91c6ddccf480")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/6caebfca-b986-4e80-be3c-3adf5503915c"
 					(reference "R8")
 					(unit 1)

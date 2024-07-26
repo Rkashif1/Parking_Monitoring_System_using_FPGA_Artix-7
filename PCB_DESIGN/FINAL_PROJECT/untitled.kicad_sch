@@ -2238,7 +2238,7 @@
 			(uuid "f411f6b0-bb37-4f63-bd04-6e7bf7fc3a43")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "J2")
 					(unit 1)
@@ -2304,7 +2304,7 @@
 			(uuid "132cbb22-ccc3-41f5-8c11-9ba2086e343d")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "#PWR01")
 					(unit 1)
@@ -2379,7 +2379,7 @@
 			(uuid "677f120b-d3ef-464b-aba6-990d897bd01e")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "10µF4")
 					(unit 1)
@@ -2452,7 +2452,7 @@
 			(uuid "d8e323cd-0e7b-455f-8687-9eb33c77a559")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "240ohm1")
 					(unit 1)
@@ -2526,7 +2526,7 @@
 			(uuid "8f908a48-398c-4f26-8117-a35fe8c6949a")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "SW1")
 					(unit 1)
@@ -2605,7 +2605,7 @@
 			(uuid "53ae1116-0041-423f-bfc4-4656e21da91f")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "J5")
 					(unit 1)
@@ -2683,7 +2683,7 @@
 			(uuid "eed0db29-faae-4960-b302-36af30f98c1f")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "U4")
 					(unit 1)
@@ -2756,7 +2756,7 @@
 			(uuid "b073c30e-b1b0-46b2-a2cf-78aa240c468b")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "540ohm1")
 					(unit 1)
@@ -2832,7 +2832,7 @@
 			(uuid "b0060c82-5019-436a-9a55-ee946ecb9d4f")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "J4")
 					(unit 1)
@@ -2910,7 +2910,7 @@
 			(uuid "a5d0fbec-156b-4cdf-93b0-1018a6c6ebc3")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "U5")
 					(unit 1)
@@ -2985,7 +2985,7 @@
 			(uuid "db3910ca-7c17-460c-8b7a-2692fc89416a")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "10µF1")
 					(unit 1)
@@ -3058,7 +3058,7 @@
 			(uuid "68ddc565-1d66-4f2c-aa1d-09483a3e80d4")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "D1")
 					(unit 1)
@@ -3133,7 +3133,7 @@
 			(uuid "53f67348-d6c1-4d69-b39f-41210ace90a7")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "10µF2")
 					(unit 1)
@@ -3208,7 +3208,7 @@
 			(uuid "7a67901b-107d-415a-8eaf-3405aa69b8dd")
 		)
 		(instances
-			(project "schemetics"
+			(project "FINAL_PROJECT"
 				(path "/047bd40c-18cc-4ecd-88f1-0eecd6e2e7c2/dddd19f4-7d92-4b18-9ceb-051e0a1e7fd1"
 					(reference "10µF3")
 					(unit 1)

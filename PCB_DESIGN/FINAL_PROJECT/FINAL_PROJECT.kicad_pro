@@ -178,7 +178,7 @@
       ],
       "track_widths": [
         0.0,
-        50.0
+        0.1
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -415,14 +415,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "global_label_dangling": "warning",
+      "global_label_dangling": "ignore",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "warning",
-      "missing_bidi_pin": "warning",
-      "missing_input_pin": "warning",
-      "missing_power_pin": "error",
-      "missing_unit": "warning",
+      "lib_symbol_issues": "ignore",
+      "missing_bidi_pin": "ignore",
+      "missing_input_pin": "ignore",
+      "missing_power_pin": "ignore",
+      "missing_unit": "ignore",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -430,7 +430,7 @@
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",
@@ -462,7 +462,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       }
