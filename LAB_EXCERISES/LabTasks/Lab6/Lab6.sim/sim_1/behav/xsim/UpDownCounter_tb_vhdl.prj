@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Lab6.srcs/sources_1/new/UpDownCounter.vhd" \
-"../../../../Lab6.srcs/sources_1/new/UpDownCounter_tb.vhd" \
-
-# Do not sort compile order
-nosort
