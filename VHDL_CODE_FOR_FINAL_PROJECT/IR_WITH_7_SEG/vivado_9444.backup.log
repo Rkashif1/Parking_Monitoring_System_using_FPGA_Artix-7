@@ -3,16 +3,16 @@
 # SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Tue Nov 12 12:23:06 2024
-# Process ID: 14808
-# Current directory: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODE_FOR_FINAL_PROJECT/IR_WITH_7_SEG
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4708 D:\MYGIT\SS2024_HWE_Lab_Team_F\VHDL_CODE_FOR_FINAL_PROJECT\IR_WITH_7_SEG\PARKING_SYSTEM.xpr
-# Log file: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODE_FOR_FINAL_PROJECT/IR_WITH_7_SEG/vivado.log
-# Journal file: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODE_FOR_FINAL_PROJECT/IR_WITH_7_SEG\vivado.jou
+# Start of session at: Wed Jul 24 13:18:34 2024
+# Process ID: 9444
+# Current directory: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODES
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17580 D:\MYGIT\SS2024_HWE_Lab_Team_F\VHDL_CODES\PARKING_SYSTEM.xpr
+# Log file: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODES/vivado.log
+# Journal file: D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODES\vivado.jou
 # Running On: DESKTOP-4ADHA59, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8376 MB
 #-----------------------------------------------------------
 start_gui
-open_project D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODE_FOR_FINAL_PROJECT/IR_WITH_7_SEG/PARKING_SYSTEM.xpr
+open_project D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODES/PARKING_SYSTEM.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
@@ -76,43 +76,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/XILINX/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 INFO: [Project 1-313] Project file moved from 'C:/Users/Kashif/Desktop/HE PROJEKT/FINAL_PS' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODE_FOR_FINAL_PROJECT/IR_WITH_7_SEG/PARKING_SYSTEM.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/MYGIT/SS2024_HWE_Lab_Team_F/VHDL_CODES/PARKING_SYSTEM.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XILINX/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:23 . Memory (MB): peak = 1451.680 ; gain = 393.836
+open_project: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1440.492 ; gain = 310.594
 update_compile_order -fileset sources_1
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1959.262 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2023.2.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2044.281 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.299 . Memory (MB): peak = 2617.973 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2617.973 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 2623.246 ; gain = 1060.023
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 12:38:53 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 13:22:43 2024...
